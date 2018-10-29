@@ -34,7 +34,7 @@ as followed:
            
     <!-- In version 3. -->
     <ff-searchbox>
-        <input ...></input>
+        <input .../>
     </ff-searchbox>
     <ff-searchbutton>
         <button ...></button>
