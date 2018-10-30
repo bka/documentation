@@ -41,6 +41,8 @@ as followed:
     </ff-searchbutton>
         ```
 
+If you had used css to style your search input and button don't forget to adjust your selectors accordingly.
+
 ### Minor API changes to take care of
 Beside the three major changes the following list contains all breaking changing.
 If we have missed something, we would be happy, if you [contact](contacts) us.
