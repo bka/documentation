@@ -9,12 +9,11 @@ There are only three major changes and some minor API changes to take care of wh
 which can be taken care of quickly and easily:
 
 ### 3 major changes
-- Like [Polymer 3](https://www.polymer-project.org/3.0/docs/devguide/feature-overview) we have moved from 
-[Bower](https://bower.io/) to [npm](https://www.npmjs.com/). If you have used Bower before please switch to
+- Aligning with the current trend we no longer support [Bower](https://bower.io/). As a replacement you can use
 [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/lang/en/)
 
-- Like [Polymer 3](https://www.polymer-project.org/3.0/docs/devguide/feature-overview) we have moved from 
-   HTML Imports to ES6 Modules. Hence you have to include our TODO js script instead of using the old HTML import as followed:
+- Aligning with the current trend Web Components are now shipped as ES6 Module instead of HTML Imports.
+Hence you have to include our TODO js script instead of using the old HTML import as followed:
    
    ```html
        <!-- Beofore -->
