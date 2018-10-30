@@ -1,6 +1,6 @@
 ## Upgrade from version 1.2.x to 3.0.0
-We strongly recommend to upgrade your system to use our latest version. While we maintain older versions, new features are likely
-to be implemented only in newer versions. In addition our newer versions stick to newer technology decreasing your
+We strongly recommend to upgrade your system to use the latest version of Web Components. While we maintain older versions, new features are likely
+to be implemented only in newer versions. In addition the newer versions stick to newer technology decreasing your
 loading time and improving internal speed. We promise to make each upgrade progress as ease as possible.
 
 In general you can keep track of our progress, changes and new features in the [release notes](documentation/release-notes).
