@@ -79,6 +79,8 @@ If we have missed something, we would be happy, if you [contact](contacts) us.
 - `ff-carousel`
     - removed `getCurrentSlide` method, use `currentSlide` property directly instead
     - removed `getMaxSlides` method, use `maxSlides` property directly instead
+- With [Polymer 3](https://www.polymer-project.org/3.0/docs/devguide/feature-overview) `Polymer.dom(HTMLElement)`
+is not possible anymore. You can use the standard HTML API directly instead.
 - TODO TK / to be discussed: body unresolved
 ```js
 function resolve() {
