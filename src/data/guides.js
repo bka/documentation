@@ -22,10 +22,6 @@ const guides = {
             path: "upgrade-guide",
             title: "5. Upgrade Guide v1.2.x to v3",
         },
-        "release-notes": {
-            path: "release-notes",
-            title: "6. Release Notes",
-        },
 
         "attribute-basics": {
             path: "attribute-basics",

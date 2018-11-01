@@ -3,7 +3,7 @@ We strongly recommend to upgrade your system to use the latest version of Web Co
 to be implemented only in newer versions. In addition the newer versions stick to newer technology decreasing your
 loading time and improving internal speed. We promise to make each upgrade progress as ease as possible.
 
-In general you can keep track of our progress, changes and new features in the [release notes](documentation/release-notes).
+In general you can keep track of our progress, changes and new features in the [release notes](https://github.com/FACT-Finder-Web-Components/ff-web-components/blob/master/CHANGELOG).
 
 There are only three major changes and some minor API changes to take care of when upgrading from version 1.2.x to version 3.0.0,
 which can be taken care of quickly and easily:
