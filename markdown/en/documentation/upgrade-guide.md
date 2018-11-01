@@ -13,20 +13,38 @@ which can be taken care of quickly and easily:
 [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/lang/en/)
 
 - Aligning with the current trend Web Components are now shipped as ES6 Module instead of HTML Imports.
-Hence you have to include our TODO js script instead of using the old HTML import as followed:
+Hence you have to load `bundle.js` instead of the HTML import as followed:
    
-   ```html
-       <!-- Beofore -->
-       asfasf
-       <!-- In version 3. -->
-       asdf
-    ```
+```html
+   <!-- Beofore -->
+   <script>
+       var Polymer = Polymer || {};
+       Polymer.dom = 'shady';
+   </script>
+   <script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+   <link rel="import" href="../bower_components/ff-web-components/dist/elements.build_with_dependencies.html">
+   <style>
+       [unresolved] {
+           opacity: 0;
+       }        
+   </style>
+     
+   <!-- In version 3. -->
+   <script src="../node_modules/ff-web-components/dist/vendor/custom-elements-es5-adapter.js"></script>
+   <script src="../node_modules/ff-web-components/dist/vendor/webcomponents-loader.js"></script>
+   <script defer src="../node_modules/ff-web-components/dist/bundle.js"></script>
+ <style>
+     [unresolved] {
+         opacity: 0;
+     }        
+ </style>
+```
 
 - With [Polymer 3](https://www.polymer-project.org/3.0/docs/devguide/feature-overview) extending built-in HTML elements
 is not possible anymore. Hence you have to nest an `input` into `ff-searchbox` and a `button` into `ff-searchbutton`
 as followed:
 
-    ```html
+```html
     <!-- Beofore -->
     <ff-searchbox ...></ff-searchbox>
     <ff-searchbutton ...></ff-searchbutton>
@@ -38,7 +56,7 @@ as followed:
     <ff-searchbutton>
         <button ...></button>
     </ff-searchbutton>
-        ```
+```
 
 If you had used css to style your search input and button don't forget to adjust your selectors accordingly.
 
