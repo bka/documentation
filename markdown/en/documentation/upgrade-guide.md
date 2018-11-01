@@ -58,3 +58,15 @@ If we have missed something, we would be happy, if you [contact](contacts) us.
 - `ff-carousel`
     - removed `getCurrentSlide` method, use `currentSlide` property directly instead
     - removed `getMaxSlides` method, use `maxSlides` property directly instead
+- TODO TK / to be discussed: body unresolved
+```js
+function resolve() {
+  document.body.removeAttribute('unresolved');
+}
+
+if (document.readyState === 'interactive' || document.readyState === 'complete') {
+  resolve();
+} else {
+  window.addEventListener('DOMContentLoaded', resolve);
+}
+```
