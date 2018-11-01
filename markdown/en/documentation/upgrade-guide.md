@@ -50,13 +50,15 @@ as followed:
     <ff-searchbutton ...></ff-searchbutton>
            
     <!-- In version 3. -->
-    <ff-searchbox>
+    <ff-searchbox ...>
         <input .../>
     </ff-searchbox>
     <ff-searchbutton>
         <button ...></button>
     </ff-searchbutton>
 ```
+Note that native `input` properties like `placeholder` stay within the `input` tag, while enhancements like 
+`suggest-onfocus` move into `ff-searchbox`.
 
 If you had used css to style your search input and button don't forget to adjust your selectors accordingly.
 
