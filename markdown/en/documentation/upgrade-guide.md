@@ -9,7 +9,7 @@ There are only three major changes and some minor API changes to take care of wh
 which can be taken care of quickly and easily:
 
 ### 3 major changes
-- Aligning with the current trend we no longer support [Bower](https://bower.io/). As a replacement you can use
+- Aligning with the current trend Web Components no longer support [Bower](https://bower.io/). As a replacement you can use
 [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/lang/en/)
 
 - Aligning with the current trend Web Components are now shipped as ES6 Module instead of HTML Imports.
