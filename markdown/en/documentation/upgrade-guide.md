@@ -60,6 +60,9 @@ as followed:
 
 If you had used css to style your search input and button don't forget to adjust your selectors accordingly.
 
+If you had used `<style is="custom-style">...</style>` to style something you can use `<custom-style></custom-style>` instead.
+
+
 ### Minor API changes to take care of
 Beside the three major changes the following list contains all breaking changing.
 If we have missed something, we would be happy, if you [contact](contacts) us.
