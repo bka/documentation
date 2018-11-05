@@ -1,5 +1,5 @@
 ## Upgrade from version 1.2.x to 3.0.0
-We strongly recommend to upgrade your system to use the latest version of Web Components. While we maintain older versions, new features are likely
+We strongly recommend to upgrade your system to use the latest version of FACT-Finder Web Components. While we maintain older versions, new features are likely
 to be implemented only in newer versions. In addition the newer versions stick to newer technology decreasing your
 loading time and improving internal speed. We promise to make each upgrade progress as ease as possible.
 
@@ -12,7 +12,7 @@ which can be taken care of quickly and easily:
 - Aligning with the current trend Web Components no longer support [Bower](https://bower.io/). As a replacement you can use
 [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/lang/en/)
 
-- Aligning with the current trend Web Components are now shipped as ES6 Module instead of HTML Imports.
+- Aligning with the current trend FACT-Finder Web Components are now shipped as ES6 Module instead of HTML Imports.
 Hence you have to load `bundle.js` instead of the HTML import as followed:
    
 ```html
