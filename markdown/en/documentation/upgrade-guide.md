@@ -5,13 +5,10 @@ loading time and improving internal speed. We promise to make each upgrade progr
 
 In general you can keep track of our progress, changes and new features in the [release notes](https://github.com/FACT-Finder-Web-Components/ff-web-components/blob/master/CHANGELOG).
 
-There are only three major changes and some minor API changes to take care of when upgrading from version 1.2.x to version 3.0.0,
+There are only two major changes and some minor API changes to take care of when upgrading from version 1.2.x to version 3.0.0,
 which can be taken care of quickly and easily:
 
-### 3 major changes
-- Aligning with the current trend Web Components no longer support [Bower](https://bower.io/). As a replacement you can use
-[npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/lang/en/)
-
+### 2 major changes
 - Aligning with the current trend FACT-Finder Web Components are now shipped as ES6 Module instead of HTML Imports.
 Hence you have to load `bundle.js` instead of the HTML import as followed:
    
@@ -66,7 +63,7 @@ If you had used `<style is="custom-style">...</style>` to style something you ca
 
 
 ### Minor API changes to take care of
-Beside the three major changes the following list contains all breaking changing.
+Beside the two major changes the following list contains all breaking changing.
 If we have missed something, we would be happy, if you [contact](contacts) us.
 
 - `ff-asn-group-element`
