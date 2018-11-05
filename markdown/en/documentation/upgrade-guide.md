@@ -67,8 +67,9 @@ If you had used `<style is="custom-style">...</style>` to style something you ca
 Beside the two major changes the following list contains all breaking changing.
 If we have missed something, we would be happy, if you [contact](contacts) us.
 
-- `ff-asn-group-element`
+- `ff-asn-group`
     - use `<div slot="groupCaption" ...>` instead of `<div data-container="groupCaption" ...>`
+- `ff-asn-group-element`
     - use `<div slot="selected" ...>` instead of `<div data-selected ...>`
     - use `<div slot="unselected" ...>` instead of `<div data-unselected ...>`
 - `ff-asn-group-slider`
