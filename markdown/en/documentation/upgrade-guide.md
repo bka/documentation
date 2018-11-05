@@ -1,7 +1,8 @@
 ## Upgrade from version 1.2.x to 3.0.0
-We strongly recommend to upgrade your system to use the latest version of FACT-Finder Web Components. While we maintain older versions, new features are likely
-to be implemented only in newer versions. In addition the newer versions stick to newer technology decreasing your
-loading time and improving internal speed. We promise to make each upgrade progress as ease as possible.
+We strongly recommend to upgrade your system to use the latest version of FACT-Finder Web Components.
+While we maintain older versions, new features are likely to be implemented only in newer versions.
+In addition the newer versions stick to newer technology decreasing your loading time and improving internal speed.
+We promise to make each upgrade progress as ease as possible.
 
 In general you can keep track of our progress, changes and new features in the [release notes](https://github.com/FACT-Finder-Web-Components/ff-web-components/blob/master/CHANGELOG).
 
@@ -26,7 +27,7 @@ Hence you have to load `bundle.js` instead of the HTML import as followed:
        }        
    </style>
      
-   <!-- In version 3. -->
+   <!-- In version 3 -->
    <script src="../node_modules/ff-web-components/dist/vendor/custom-elements-es5-adapter.js"></script>
    <script src="../node_modules/ff-web-components/dist/vendor/webcomponents-loader.js"></script>
    <script defer src="../node_modules/ff-web-components/dist/bundle.js"></script>
@@ -78,17 +79,20 @@ If we have missed something, we would be happy, if you [contact](contacts) us.
 - `ff-carousel`
     - removed `getCurrentSlide` method, use `currentSlide` property directly instead
     - removed `getMaxSlides` method, use `maxSlides` property directly instead
-- With [Polymer 3](https://www.polymer-project.org/3.0/docs/devguide/feature-overview) `Polymer.dom(HTMLElement)`
-is not possible anymore. You can use the standard HTML API directly instead.
-- TODO TK / to be discussed: body unresolved
-```js
-function resolve() {
-  document.body.removeAttribute('unresolved');
-}
-
-if (document.readyState === 'interactive' || document.readyState === 'complete') {
-  resolve();
-} else {
-  window.addEventListener('DOMContentLoaded', resolve);
-}
-```
+- [Polymer 3](https://www.polymer-project.org/3.0/docs/devguide/feature-overview) related breaking changes:
+    - Polymer shady DOM was removed, because it is not necessary anymore. In cases you used something like
+    `Polymer.dom(HTMLElement).innerHTML = ...` you now have to use the native DOM API directly like
+    `HTMLElement.innerHTML = ...`
+    - Polymer 1 did remove `unresolved` attribute of `body`-tag automatically. Polymer 3 does not.
+    If you depend on the old behaviour you can retain it with the following code:
+        ```js
+        function resolve() {
+          document.body.removeAttribute('unresolved');
+        }
+        
+        if (document.readyState === 'interactive' || document.readyState === 'complete') {
+          resolve();
+        } else {
+          window.addEventListener('DOMContentLoaded', resolve);
+        }
+        ```
