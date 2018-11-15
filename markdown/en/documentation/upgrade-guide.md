@@ -60,7 +60,14 @@ Note that native `input` properties like `placeholder` stay within the `input` t
 
 If you had used css to style your search input and button don't forget to adjust your selectors accordingly.
 
-If you had used `<style is="custom-style">...</style>` to style something you can use `<custom-style></custom-style>` instead.
+If you had used `<style is="custom-style">...</style>` to style something you have to wrap your styles as followed: 
+```html
+<custom-style>
+    <style>
+        ...
+    </style>
+</custom-style>
+```
 
 
 ### Minor API changes to take care of
