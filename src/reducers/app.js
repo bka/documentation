@@ -11,7 +11,7 @@ const app = (state = {drawerOpened: false}, action) => {
                 page: action.page,
                 version: action.version,
                 subpage: action.subpage,
-                tab: action.tab || "docs"
+                tab: action.tab || `docs`
             };
         case UPDATE_DRAWER_STATE:
             return {
